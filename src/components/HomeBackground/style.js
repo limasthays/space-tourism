@@ -8,7 +8,7 @@ const breakpoints = [
     name: "mobile",
     break: 200,
     background: `${MobileHomeBG}`,
-    height: "100vh",
+    height: "100%",
   },
   {
     name: "tablet",
@@ -25,6 +25,9 @@ const breakpoints = [
 ];
 
 export const StyledHomeBackground = styled.div`
+  display: flex;
+  flex-direction: column;
+
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
