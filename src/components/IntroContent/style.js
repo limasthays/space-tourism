@@ -6,36 +6,41 @@ export const StyledIntroContent = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 48px;
-  span {
-    font-family: "Barlow Condensed", sans-serif;
+  .lateral {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    span {
+      font-family: "Barlow Condensed", sans-serif;
 
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 2.7px;
-    color: #d0d6f9;
-  }
-  h1 {
-    font-family: "Bellefair", serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: 2.7px;
+      color: #d0d6f9;
+    }
+    h1 {
+      font-family: "Bellefair", serif;
 
-    font-weight: 400;
-    font-size: 80px;
-    line-height: 100px;
-    text-align: center;
-    color: #ffffff;
-  }
+      font-weight: 400;
+      font-size: 80px;
+      line-height: 100px;
+      text-align: center;
+      color: #ffffff;
+    }
 
-  p {
-    font-family: "Barlow";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 25px;
+    p {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
 
-    text-align: center;
+      text-align: center;
 
-    color: #d0d6f9;
+      color: #d0d6f9;
+    }
   }
 
   .circle {
@@ -48,7 +53,7 @@ export const StyledIntroContent = styled.div`
 
     width: 150px;
     height: 150px;
-    border-radius: 100px;
+    border-radius: 150px;
 
     p {
       font-family: "Bellefair";
@@ -61,6 +66,65 @@ export const StyledIntroContent = styled.div`
       letter-spacing: 1.25px;
 
       color: #0b0d17;
+    }
+  }
+
+  @media (min-width: 768px) {
+    row-gap: 155px;
+    .lateral {
+      width: 450px;
+      span {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+      }
+      h1 {
+        font-size: 150px;
+        line-height: 150px;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 16px;
+      }
+    }
+    .circle {
+      width: 242px;
+      height: 242px;
+      p {
+        font-size: 32px;
+      }
+    }
+  }
+  @media (min-width: 1000px) {
+    flex-direction: row;
+    column-gap: 500px;
+
+    .lateral {
+      width: 444px;
+      align-items: flex-start;
+      flex-direction: column;
+
+      span,
+      h1,
+      p {
+        text-align: left;
+      }
+      span {
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 4.725px;
+      }
+
+      h1 {
+        font-size: 150px;
+        line-height: 172px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 32px;
+      }
     }
   }
 `;
