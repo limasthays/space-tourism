@@ -4,7 +4,6 @@ import { IntroContent } from "../../components/IntroContent";
 import { MenuMobile } from "../../components/Menu-Mobile";
 import { useState } from "react";
 
-//<MenuMobile menu={menu} setMenu={setMenu} />
 export function Home() {
   const [menu, setMenu] = useState(false);
   return (

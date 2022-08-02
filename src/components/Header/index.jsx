@@ -15,6 +15,7 @@ export const Header = ({ setMenu, menu }) => {
         onClick={() => setMenu(true)}
         conditional={true}
         menu={menu}
+        className="mobile-menu-item"
       />
     </StyledHeader>
   );
