@@ -1,10 +1,14 @@
-import { Link } from "react-router-dom";
+import { HomeBackground } from "../../components/HomeBackground";
+import { Header } from "../../components/Header";
+import { IntroContent } from "../../components/IntroContent";
 
 export function Home() {
   return (
     <>
-      <h1>HOME</h1>
-      <Link to="/technology">Technology</Link>
+      <HomeBackground>
+        <Header />
+        <IntroContent />
+      </HomeBackground>
     </>
   );
 }
