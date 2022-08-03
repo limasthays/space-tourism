@@ -1,3 +1,12 @@
+import { StyledCrewBackground } from "../../components/CrewBackground/style";
+import { Header } from "../../components/Header";
+
 export function Crew() {
-  return <h1>Crew</h1>;
+  return (
+    <StyledCrewBackground>
+      <Header />
+
+      <div className="crew-container"></div>
+    </StyledCrewBackground>
+  );
 }

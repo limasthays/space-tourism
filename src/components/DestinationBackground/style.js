@@ -12,6 +12,15 @@ export const StyledDestinationBackground = styled.div`
 
   height: 100vh;
 
+  .destination-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    margin-top: 24px;
+  }
+
   @media (min-width: 300px) {
     background-image: url(${mobileBG});
   }
