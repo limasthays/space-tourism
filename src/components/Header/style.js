@@ -7,7 +7,7 @@ export const StyledHeader = styled.header`
 
   @media (min-width: 768px) {
     .mobile-menu-item {
-      display: none;
+      visibility: hidden;
     }
   }
 `;

@@ -7,6 +7,9 @@ export const StyledMenuMobile = styled.div`
   width: 75%;
   height: 100vh;
   position: absolute;
+  top: 0px;
+  right: 0px;
+  /*margin-right: -24px;*/
 
   align-self: flex-end;
   justify-self: flex-end;
@@ -14,9 +17,6 @@ export const StyledMenuMobile = styled.div`
   visibility: ${(props) => (props.visible ? "visible" : "hidden")};
 
   padding: 33px 25px 0px 33px;
-
-  margin-top: -24px;
-  margin-right: -24px;
 
   background: rgba(255, 255, 255, 0.09);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);

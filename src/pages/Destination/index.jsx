@@ -1,3 +1,10 @@
+import { DestinationBackground } from "../../components/DestinationBackground";
+import { Header } from "../../components/Header";
+
 export function Destination() {
-  return <h1>destination</h1>;
+  return (
+    <DestinationBackground>
+      <Header />
+    </DestinationBackground>
+  );
 }

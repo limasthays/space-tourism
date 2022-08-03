@@ -3,8 +3,12 @@ import LogoIcon from "../../assets/shared/logo.svg";
 import MenuIcon from "../../assets/shared/icon-hamburger.svg";
 import { Icon } from "../Icons";
 import { Link } from "react-router-dom";
+import { MenuDesktopDiv } from "../Menu-Desktop";
+import { useState } from "react";
+import { MenuMobile } from "../Menu-Mobile";
 
-export const Header = ({ setMenu, menu }) => {
+export const Header = () => {
+  const [menu, setMenu] = useState(false);
   return (
     <StyledHeader>
       <Link to="/">
@@ -17,6 +21,10 @@ export const Header = ({ setMenu, menu }) => {
         menu={menu}
         className="mobile-menu-item"
       />
+
+      <MenuDesktopDiv menu={menu} />
+
+      <MenuMobile menu={menu} setMenu={setMenu} />
     </StyledHeader>
   );
 };

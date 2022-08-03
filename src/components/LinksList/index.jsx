@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { LinksListDesktopStyled } from "./style-desktop";
 import { LinksListMobileStyled } from "./styles";
 
 const items = [
@@ -35,6 +36,21 @@ export const LinksListMobile = () => {
             <span>{item.page}</span>
           </Link>
         </LinksListMobileStyled>
+      ))}
+    </ul>
+  );
+};
+
+export const LinksListDesktop = () => {
+  return (
+    <ul className="ul-desktop">
+      {items.map((item) => (
+        <LinksListDesktopStyled key={item.page}>
+          <Link to={item.link}>
+            <span>{item.number}</span>
+            <span>{item.page}</span>
+          </Link>
+        </LinksListDesktopStyled>
       ))}
     </ul>
   );
