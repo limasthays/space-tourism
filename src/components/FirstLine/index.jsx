@@ -12,7 +12,6 @@ const firstLine = [
 export const FirstLine = () => {
   const { page } = useContext(PageContext);
   const filteredLines = firstLine.filter((item) => item.name === page);
-  console.log(filteredLines);
 
   return (
     <StyledFirstLine>

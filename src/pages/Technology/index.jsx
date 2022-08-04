@@ -1,3 +1,27 @@
+import { useContext, useEffect } from "react";
+import { PageContext } from "../../components/contexts/PageContext";
+import { FirstLine } from "../../components/FirstLine";
+import { Header } from "../../components/Header";
+import { StyledTechBG } from "../../components/TechBackground/style";
+import { TechButtons } from "../../components/TechButtons";
+import { TechContent } from "../../components/TechContent";
+import { TechImage } from "../../components/TechImage";
+
 export const Technology = () => {
-  return <h1>TECHNOLOGY</h1>;
+  const { setPage } = useContext(PageContext);
+  useEffect(() => {
+    setPage("technology");
+  });
+
+  return (
+    <StyledTechBG>
+      <Header />
+      <div>
+        <FirstLine />
+        <TechImage />
+        <TechButtons />
+        <TechContent />
+      </div>
+    </StyledTechBG>
+  );
 };

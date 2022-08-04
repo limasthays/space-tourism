@@ -7,19 +7,19 @@ const breakpoints = [
   {
     name: "mobile",
     break: 200,
-    background: `${MobileHomeBG}`,
+    background: MobileHomeBG,
     height: "100%",
   },
   {
     name: "tablet",
     break: 768,
-    background: `${TabletHomeBG}`,
+    background: TabletHomeBG,
     height: "100vh",
   },
   {
     name: "desktop",
     break: 1000,
-    background: `${DesktopHomeBG}`,
+    background: DesktopHomeBG,
     height: "100vh",
   },
 ];

@@ -9,7 +9,6 @@ export const DestinationContent = () => {
   const { destination } = useContext(PageContext);
 
   const filtered = destinationData.filter((item) => item.name === destination);
-  console.log(filtered);
 
   return (
     <StyledDestinationContent>
