@@ -1,12 +1,12 @@
 import { StyledDestinationContent } from "./style";
 import data from "../../Data/data.json";
 import { useContext } from "react";
-import { DestinationContext } from "../contexts/DestinationContext";
+import { PageContext } from "../contexts/PageContext";
 
 const destinationData = data.destinations;
 
 export const DestinationContent = () => {
-  const { destination } = useContext(DestinationContext);
+  const { destination } = useContext(PageContext);
 
   const filtered = destinationData.filter((item) => item.name === destination);
   console.log(filtered);

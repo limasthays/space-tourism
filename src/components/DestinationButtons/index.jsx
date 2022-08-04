@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import { DestinationContext } from "../contexts/DestinationContext";
+import { PageContext } from "../contexts/PageContext";
 
 export const DestinationButtons = () => {
-  const { setDestination } = useContext(DestinationContext);
+  const { setDestination } = useContext(PageContext);
   return (
     <div>
       <button onClick={() => setDestination("moon")}>moon</button>

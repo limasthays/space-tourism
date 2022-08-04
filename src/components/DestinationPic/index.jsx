@@ -3,7 +3,7 @@ import europa from "../../assets/destination/image-europa.png";
 import mars from "../../assets/destination/image-mars.png";
 import moon from "../../assets/destination/image-moon.png";
 import titan from "../../assets/destination/image-titan.png";
-import { DestinationContext } from "../contexts/DestinationContext";
+import { PageContext } from "../contexts/PageContext";
 
 const images = [
   { name: "moon", image: moon },
@@ -13,7 +13,7 @@ const images = [
 ];
 
 export const DestinationImage = () => {
-  const { destination } = useContext(DestinationContext);
+  const { destination } = useContext(PageContext);
   const currentDestination = images.filter((item) => item.name === destination);
 
   return <img src={currentDestination[0].image} alt="" />;
