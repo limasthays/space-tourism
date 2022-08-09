@@ -13,14 +13,21 @@ export const DestinationContent = () => {
   return (
     <StyledDestinationContent>
       {filtered.map((item) => (
-        <div key={item.name}>
+        <>
           <h1>{item.name}</h1>
           <p>{item.description}</p>
-          <span>avg. distance</span>
-          <h4>{item.distance}</h4>
-          <span>est. travel time</span>
-          <h4>{item.travel}</h4>
-        </div>
+          <hr />
+
+          <div>
+            <span>avg. distance</span>
+            <h4>{item.distance}</h4>
+          </div>
+
+          <div>
+            <span>est. travel time</span>
+            <h4>{item.travel}</h4>
+          </div>
+        </>
       ))}
     </StyledDestinationContent>
   );
