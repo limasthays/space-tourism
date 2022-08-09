@@ -33,6 +33,15 @@ export const StyledCrewBackground = styled.div`
   background-repeat: no-repeat;
   padding: 24px;
 
+  .crew-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 32px;
+
+    margin-top: 24px;
+  }
+
   ${breakpoints.map(
     (breakpoint) => css`
       @media (min-width: ${breakpoint.break}px) {

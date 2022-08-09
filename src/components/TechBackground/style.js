@@ -13,6 +13,15 @@ export const StyledTechBG = styled.div`
   background-repeat: no-repeat;
   padding: 24px;
 
+  .tech-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 32px;
+
+    margin-top: 24px;
+  }
+
   @media (max-width: 425px) {
     background-image: url(${mobile});
   }

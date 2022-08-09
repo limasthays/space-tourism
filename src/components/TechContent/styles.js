@@ -11,7 +11,6 @@ export const StyledTechContent = styled.div`
     text-align: center;
     letter-spacing: 2.3625px;
     color: #d0d6f9;
-    margin-top: 32px;
   }
 
   h1 {

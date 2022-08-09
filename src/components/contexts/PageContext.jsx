@@ -5,7 +5,7 @@ export const PageContext = createContext({});
 export const PageProvider = ({ children }) => {
   const [page, setPage] = useState("home");
   const [destination, setDestination] = useState("moon");
-  const [crew, setCrew] = useState("douglas");
+  const [crew, setCrew] = useState("Douglas Hurley");
   const [techs, setTechs] = useState("Launch vehicle");
 
   return (

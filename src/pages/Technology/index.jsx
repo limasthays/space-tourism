@@ -16,7 +16,7 @@ export const Technology = () => {
   return (
     <StyledTechBG>
       <Header />
-      <div>
+      <div className="tech-container">
         <FirstLine />
         <TechImage />
         <TechButtons />

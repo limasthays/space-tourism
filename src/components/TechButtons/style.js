@@ -5,15 +5,15 @@ export const StyledTechButton = styled.div`
   gap: 16px;
   justify-content: center;
 
-  margin-top: 32px;
   button {
+    cursor: pointer;
     border-radius: 40px;
     width: 40px;
     height: 40px;
     border: 1px solid white;
     color: white;
     background-color: transparent;
-    cursor: pointer;
+    opacity: 0.25;
 
     font-family: "Bellefair", sans-serif;
     font-style: normal;
@@ -22,5 +22,12 @@ export const StyledTechButton = styled.div`
     line-height: 18px;
     text-align: center;
     letter-spacing: 1px;
+
+    &:hover,
+    &:focus {
+      background-color: white;
+      color: #0b0d17;
+      opacity: unset;
+    }
   }
 `;

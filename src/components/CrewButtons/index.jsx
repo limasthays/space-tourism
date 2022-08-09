@@ -1,15 +1,26 @@
 import { useContext } from "react";
 import { PageContext } from "../contexts/PageContext";
+import oval from "../../assets/shared/Oval.svg";
+import { StyledCrewButtons } from "./style";
 
 export const CrewButtons = () => {
   const { setCrew } = useContext(PageContext);
 
   return (
-    <div>
-      <button onClick={() => setCrew("douglas")}>douglas</button>
-      <button onClick={() => setCrew("mark")}>mark</button>
-      <button onClick={() => setCrew("victor")}>victor</button>
-      <button onClick={() => setCrew("ansari")}>ansari</button>
-    </div>
+    <StyledCrewButtons>
+      <button>
+        <img src={oval} onClick={() => setCrew("Douglas Hurley")} alt="" />
+      </button>
+
+      <button>
+        <img src={oval} onClick={() => setCrew("Mark Shuttleworth")} alt="" />
+      </button>
+      <button>
+        <img src={oval} onClick={() => setCrew("Victor Glover")} alt="" />
+      </button>
+      <button>
+        <img src={oval} onClick={() => setCrew("Anousheh Ansari")} alt="" />
+      </button>
+    </StyledCrewButtons>
   );
 };

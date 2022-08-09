@@ -5,6 +5,7 @@ import { CrewImage } from "../../components/CrewImage";
 import { FirstLine } from "../../components/FirstLine";
 import { useContext, useEffect } from "react";
 import { PageContext } from "../../components/contexts/PageContext";
+import { CrewContent } from "../../components/CrewContent";
 
 export function Crew() {
   const { setPage } = useContext(PageContext);
@@ -15,10 +16,11 @@ export function Crew() {
   return (
     <StyledCrewBackground>
       <Header />
-      <FirstLine />
       <div className="crew-container">
+        <FirstLine />
         <CrewImage />
         <CrewButtons />
+        <CrewContent />
       </div>
     </StyledCrewBackground>
   );
