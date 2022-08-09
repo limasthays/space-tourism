@@ -37,7 +37,7 @@ export const StyledCrewBackground = styled.div`
     (breakpoint) => css`
       @media (min-width: ${breakpoint.break}px) {
         background-image: url(${breakpoint.background});
-        height: 100vh;
+        height: 100%;
       }
     `
   )}

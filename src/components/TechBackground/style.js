@@ -7,16 +7,16 @@ export const StyledTechBG = styled.div`
   display: flex;
   flex-direction: column;
 
-  height: 100vh;
+  height: 100%;
 
   background-attachment: fixed;
   background-repeat: no-repeat;
   padding: 24px;
 
-  @media (min-width: 200px) {
+  @media (max-width: 425px) {
     background-image: url(${mobile});
   }
-  @media (min-width: 768px) {
+  @media (min-width: 426px) {
     background-image: url(${tablet});
   }
   @media (min-width: 1000px) {
