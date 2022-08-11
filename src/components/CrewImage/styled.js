@@ -16,4 +16,9 @@ export const StyledCrewImage = styled.div`
     height: 423px;
     width: 500px;
   }
+
+  @media (min-width: 768px) {
+    height: 523px;
+    width: 600px;
+  }
 `;

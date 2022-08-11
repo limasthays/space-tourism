@@ -21,4 +21,8 @@ export const StyledCrewButtons = styled.div`
   @media (min-width: 768px) {
     order: 3;
   }
+
+  @media (min-width: 1000px) {
+    justify-content: center;
+  }
 `;

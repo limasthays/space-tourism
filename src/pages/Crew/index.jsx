@@ -1,6 +1,5 @@
 import { StyledCrewBackground } from "../../components/CrewBackground/style";
 import { Header } from "../../components/Header";
-import { CrewButtons } from "../../components/CrewButtons";
 import { CrewImage } from "../../components/CrewImage";
 import { FirstLine } from "../../components/FirstLine";
 import { useContext, useEffect } from "react";
@@ -16,10 +15,9 @@ export function Crew() {
   return (
     <StyledCrewBackground>
       <Header />
+      <FirstLine />
       <div className="crew-container">
-        <FirstLine />
         <CrewImage />
-        <CrewButtons />
         <CrewContent />
       </div>
     </StyledCrewBackground>

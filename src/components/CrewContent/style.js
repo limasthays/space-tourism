@@ -47,4 +47,27 @@ export const StyledCrewContent = styled.div`
       width: 458px;
     }
   }
+
+  @media (min-width: 1000px) {
+    .crew--content {
+      width: 500px;
+      h3,
+      h2,
+      p {
+        text-align: left;
+      }
+      h3 {
+        font-size: 32px;
+        line-height: 37px;
+      }
+      h2 {
+        font-size: 56px;
+        line-height: 64px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 32px;
+      }
+    }
+  }
 `;

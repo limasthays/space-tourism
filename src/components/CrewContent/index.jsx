@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import data from "../../Data/data.json";
 import { PageContext } from "../contexts/PageContext";
+import { CrewButtons } from "../CrewButtons";
 import { StyledCrewContent } from "./style";
 
 const crewData = data.crew;
@@ -19,6 +20,8 @@ export const CrewContent = () => {
           <p key={item.bio}>{item.bio}</p>
         </div>
       ))}
+
+      <CrewButtons />
     </StyledCrewContent>
   );
 };
