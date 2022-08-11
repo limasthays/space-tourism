@@ -7,4 +7,8 @@ export const StyledDestImage = styled.img`
   @media (min-width: 768px) {
     width: 300px;
   }
+
+  @media (min-width: 1000px) {
+    width: auto;
+  }
 `;

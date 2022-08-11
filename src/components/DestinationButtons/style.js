@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledDestButtons = styled.div`
   display: flex;
   gap: 16px;
+  justify-content: center;
   button {
     font-family: "Barlow Condensed", serif;
     font-style: normal;

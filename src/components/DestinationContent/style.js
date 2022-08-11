@@ -7,16 +7,11 @@ export const StyledDestinationContent = styled.div`
 
   margin-bottom: 60px;
 
-  .destination-content {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-
+  .destination-content,
   .destination-info {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 30px;
   }
 
   h1 {
@@ -89,6 +84,36 @@ export const StyledDestinationContent = styled.div`
     .destination-info {
       flex-direction: row;
       align-self: center;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    align-items: flex-start;
+    gap: 38px;
+
+    margin-left: 10%;
+    h1 {
+      text-align: start;
+    }
+    p {
+      text-align: start;
+    }
+
+    .destination-info {
+      align-self: flex-start;
+
+      div {
+        span {
+          text-align: left;
+        }
+        h4 {
+          text-align: left;
+        }
+      }
+    }
+
+    .destination-content {
+      row-gap: 38px;
     }
   }
 `;

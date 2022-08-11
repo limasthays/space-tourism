@@ -17,9 +17,10 @@ export function Destination() {
       <Header />
       <div className="destination-container">
         <FirstLine />
-        <DestinationImage />
-        <DestinationButtons />
-        <DestinationContent />
+        <div className="dest-content">
+          <DestinationImage />
+          <DestinationContent />
+        </div>
       </div>
     </DestinationBackground>
   );

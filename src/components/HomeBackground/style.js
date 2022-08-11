@@ -38,6 +38,7 @@ export const StyledHomeBackground = styled.div`
       @media (min-width: ${breakpoint.break}px) {
         background-image: url(${breakpoint.background});
         width: 100%;
+        height: 100vh;
       }
     `
   )}

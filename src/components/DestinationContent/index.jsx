@@ -2,6 +2,7 @@ import { StyledDestinationContent } from "./style";
 import data from "../../Data/data.json";
 import { useContext } from "react";
 import { PageContext } from "../contexts/PageContext";
+import { DestinationButtons } from "../DestinationButtons";
 
 const destinationData = data.destinations;
 
@@ -12,6 +13,7 @@ export const DestinationContent = () => {
 
   return (
     <StyledDestinationContent>
+      <DestinationButtons />
       {filtered.map((item) => (
         <div className="destination-content">
           <h1>{item.name}</h1>

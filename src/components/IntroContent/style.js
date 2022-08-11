@@ -98,7 +98,8 @@ export const StyledIntroContent = styled.div`
   }
   @media (min-width: 1000px) {
     flex-direction: row;
-    column-gap: 500px;
+    margin: 0% 5% 0% 5%;
+    gap: 30%;
 
     .lateral {
       width: 444px;
@@ -124,6 +125,18 @@ export const StyledIntroContent = styled.div`
       p {
         font-size: 18px;
         line-height: 32px;
+      }
+    }
+
+    .circle {
+      width: 20vw;
+      height: 20vw;
+      border-radius: 20vw;
+
+      p {
+        font-size: 32px;
+        line-height: 37px;
+        letter-spacing: 2px;
       }
     }
   }

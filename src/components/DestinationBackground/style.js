@@ -20,6 +20,11 @@ export const StyledDestinationBackground = styled.div`
 
     margin-top: 24px;
   }
+  .dest-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   @media (min-width: 300px) {
     background-image: url(${mobileBG});
@@ -31,5 +36,9 @@ export const StyledDestinationBackground = styled.div`
 
   @media (min-width: 1000px) {
     background-image: url(${desktopBG});
+
+    .dest-content {
+      flex-direction: row;
+    }
   }
 `;
