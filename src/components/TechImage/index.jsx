@@ -6,7 +6,6 @@ import two from "../../assets/technology/image-space-capsule-landscape.jpg";
 import three from "../../assets/technology/image-spaceport-landscape.jpg";
 import { StyledTechImage } from "./style";
 
-//<img  alt="" />;
 const images = [
   { name: "Launch vehicle", image: one },
   { name: "Spaceport", image: two },

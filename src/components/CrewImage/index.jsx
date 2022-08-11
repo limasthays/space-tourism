@@ -18,7 +18,7 @@ export const CrewImage = () => {
   const currentMember = images.filter((member) => member.name === crew);
   return (
     <StyledCrewImage>
-      <img src={currentMember[0].image} alt="" />;
+      <img src={currentMember[0].image} alt="" />
     </StyledCrewImage>
   );
 };

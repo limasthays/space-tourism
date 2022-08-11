@@ -9,4 +9,11 @@ export const StyledCrewImage = styled.div`
   img {
     max-height: 100%;
   }
+
+  @media (min-width: 768px) {
+    order: 4;
+
+    height: 423px;
+    width: 500px;
+  }
 `;

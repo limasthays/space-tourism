@@ -14,4 +14,14 @@ export const StyledFirstLine = styled.div`
       opacity: 0.25;
     }
   }
+
+  @media (min-width: 768px) {
+    align-self: flex-start;
+
+    h3 {
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 3.375px;
+    }
+  }
 `;

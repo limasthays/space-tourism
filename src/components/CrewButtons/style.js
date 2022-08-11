@@ -17,4 +17,8 @@ export const StyledCrewButtons = styled.div`
       opacity: 0.17;
     }
   }
+
+  @media (min-width: 768px) {
+    order: 3;
+  }
 `;

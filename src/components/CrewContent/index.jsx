@@ -10,14 +10,14 @@ export const CrewContent = () => {
 
   return (
     <StyledCrewContent>
-      {filtered.map((item, index) => (
-        <>
-          <div key={index}>
+      {filtered.map((item) => (
+        <div className="crew--content">
+          <div>
             <h3 key={item.role}>{item.role}</h3>
             <h2 key={item.name}>{item.name}</h2>
           </div>
           <p key={item.bio}>{item.bio}</p>
-        </>
+        </div>
       ))}
     </StyledCrewContent>
   );

@@ -30,4 +30,11 @@ export const StyledTechButton = styled.div`
       opacity: unset;
     }
   }
+  @media (min-width: 768px) {
+    button {
+      border-radius: 60px;
+      width: 60px;
+      height: 60px;
+    }
+  }
 `;

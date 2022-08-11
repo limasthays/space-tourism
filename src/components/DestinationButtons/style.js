@@ -23,5 +23,11 @@ export const StyledDestButtons = styled.div`
       text-decoration: underline;
       text-decoration-thickness: 3px;
     }
+
+    @media (min-width: 768px) {
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 2.7px;
+    }
   }
 `;

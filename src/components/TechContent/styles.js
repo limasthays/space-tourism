@@ -35,4 +35,22 @@ export const StyledTechContent = styled.div`
     color: #d0d6f9;
     margin-top: 16px;
   }
+
+  @media (min-width: 768px) {
+    span {
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 2.7px;
+    }
+
+    h1 {
+      font-size: 40px;
+      line-height: 46px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
 `;

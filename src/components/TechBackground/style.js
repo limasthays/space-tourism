@@ -8,9 +8,9 @@ export const StyledTechBG = styled.div`
   flex-direction: column;
 
   height: 100%;
+  width: 100%;
 
   background-attachment: fixed;
-  background-repeat: no-repeat;
   padding: 24px;
 
   .tech-container {

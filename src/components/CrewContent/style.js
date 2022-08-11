@@ -41,4 +41,10 @@ export const StyledCrewContent = styled.div`
     text-align: center;
     color: #d0d6f9;
   }
+
+  @media (min-width: 768px) {
+    .crew--content {
+      width: 458px;
+    }
+  }
 `;

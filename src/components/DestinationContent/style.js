@@ -5,6 +5,20 @@ export const StyledDestinationContent = styled.div`
   flex-direction: column;
   gap: 16px;
 
+  margin-bottom: 60px;
+
+  .destination-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .destination-info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
   h1 {
     font-family: "Bellefair";
     font-style: normal;
@@ -28,6 +42,7 @@ export const StyledDestinationContent = styled.div`
 
   hr {
     border: 1px solid #383b4b;
+    width: 100%;
   }
 
   span {
@@ -40,6 +55,7 @@ export const StyledDestinationContent = styled.div`
     letter-spacing: 2.3625px;
     text-transform: uppercase;
     color: #d0d6f9;
+    margin-bottom: 12px;
 
     display: block;
   }
@@ -53,6 +69,26 @@ export const StyledDestinationContent = styled.div`
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
-    margin-top: 12px;
+  }
+
+  @media (min-width: 768px) {
+    .destination-content {
+      width: 570px;
+
+      h1 {
+        font-size: 80px;
+        line-height: 92px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+
+    .destination-info {
+      flex-direction: row;
+      align-self: center;
+    }
   }
 `;

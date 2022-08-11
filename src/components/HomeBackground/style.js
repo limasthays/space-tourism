@@ -32,11 +32,12 @@ export const StyledHomeBackground = styled.div`
   background-attachment: fixed;
   background-repeat: no-repeat;
   padding: 24px;
+  padding-bottom: 90px;
   ${breakpoints.map(
     (breakpoint) => css`
       @media (min-width: ${breakpoint.break}px) {
         background-image: url(${breakpoint.background});
-        height: ${breakpoint.height};
+        width: 100%;
       }
     `
   )}
