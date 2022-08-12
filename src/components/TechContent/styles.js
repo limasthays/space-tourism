@@ -53,4 +53,10 @@ export const StyledTechContent = styled.div`
       line-height: 28px;
     }
   }
+
+  @media (min-width: 1000px) {
+    order: -1;
+
+    width: 470px;
+  }
 `;

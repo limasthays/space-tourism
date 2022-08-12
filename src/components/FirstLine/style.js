@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const StyledFirstLine = styled.div`
+  margin-top: 24px;
   h3 {
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 400;

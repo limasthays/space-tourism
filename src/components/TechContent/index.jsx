@@ -11,7 +11,7 @@ export const TechContent = () => {
   const filtered = techData.filter((item) => item.name === techs);
 
   return (
-    <div>
+    <>
       {filtered.map((item) => (
         <StyledTechContent>
           <span>THE TERMINOLOGY</span>
@@ -19,6 +19,6 @@ export const TechContent = () => {
           <p>{item.description}</p>
         </StyledTechContent>
       ))}
-    </div>
+    </>
   );
 };

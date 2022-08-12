@@ -10,6 +10,7 @@ export const StyledTechBG = styled.div`
   height: 100%;
   width: 100%;
 
+  background-image: url(${mobile});
   background-attachment: fixed;
   padding: 24px;
 
@@ -19,16 +20,19 @@ export const StyledTechBG = styled.div`
     align-items: center;
     row-gap: 32px;
 
-    margin-top: 24px;
+    width: 100%;
   }
 
-  @media (max-width: 425px) {
-    background-image: url(${mobile});
-  }
   @media (min-width: 426px) {
     background-image: url(${tablet});
   }
   @media (min-width: 1000px) {
     background-image: url(${desktop});
+
+    .tech-container {
+      flex-direction: row;
+      justify-content: flex-end;
+      column-gap: 7%;
+    }
   }
 `;

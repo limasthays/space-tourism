@@ -37,4 +37,9 @@ export const StyledTechButton = styled.div`
       height: 60px;
     }
   }
+
+  @media (min-width: 1000px) {
+    flex-direction: column;
+    order: -1;
+  }
 `;
