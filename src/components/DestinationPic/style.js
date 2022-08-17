@@ -9,6 +9,6 @@ export const StyledDestImage = styled.img`
   }
 
   @media (min-width: 1000px) {
-    width: auto;
+    width: 38%;
   }
 `;
